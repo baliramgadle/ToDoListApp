@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Task-List App</h1>
+            <a href="https://baliramgadle.netlify.app" class="contact">Developer</a>
+        </header>
+        <main>
+            <div class="task-input">
+                <div>
+                    <label for="taskInput">Task:</label><br>
+                    <input type="text" id="taskInput" placeholder="Enter your task" />
+                </div>
+
+                <div>
+                    <label for="deadlineInput">Deadline:</label><br>
+                    <input type="datetime-local" id="deadlineInput" />
+                </div>
+
+                <button id="addTaskButton">Add Task</button>
+            </div>
+            <div class="task-list-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Created On</th>
+                            <th>Deadline</th>
+                            <th>Completed</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskList"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
